@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Extravaganza</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Budget Extravaganza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="transactions-mockup.html">Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="budget-mockup.html">Budget</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mb-5 mt-4">
+            <div class="col">
+                <h3 class="mt-1">Transactions</h3>
+            </div>
+            <div class="col text-end">
+                <button class="btn btn-info">New Transaction</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Notes</th>
+                            <th>Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- This is a form that will show or hide when we create or edit -->
+                        <!-- <tr>
+                            <td>
+                                <select class="form-select">
+                                    <option>Income</option>
+                                    <option>Rent</option>
+                                    <option>Groceries</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form-control" placeholder="notes"/></td>
+                            <td><input type="number" class="form-control" placeholder="0.00" step="0.01"/></td>
+                            <td class="text-end"><button class="btn btn-sm btn-success">Save</button></td>
+                        </tr> -->
+                        <tr>
+                            <td>Income</td>
+                            <td>first paycheck</td>
+                            <td>$1500.00</td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-secondary me-2">Edit</button>
+                                <button class="btn btn-sm btn-warning">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Groceries</td>
+                            <td>lots of pasta</td>
+                            <td class="text-danger">$45.89</td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-secondary me-2">Edit</button>
+                                <button class="btn btn-sm btn-warning">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
